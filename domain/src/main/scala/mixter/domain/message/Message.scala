@@ -11,7 +11,7 @@ case class Message(messageQuacked: MessageQuacked, events:Traversable[MessageEve
   override type AggregateEvent = MessageEvent
   override type InitialEvent = MessageQuacked
 
-  val projection = events.foldLeft(DecisionProjection.of(messageQuacked))((acc,event)=> acc(event))
+  private val projection = events.foldLeft(DecisionProjection.of(messageQuacked))((acc,event)=> acc(event))
 
   def requack(requacker: UserId, authorId:UserId, message:String)(implicit ep:EventPublisher): Unit =
     if(!projection.publishers.contains(requacker) && !projection.deleted){
