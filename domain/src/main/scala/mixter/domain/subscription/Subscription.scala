@@ -2,9 +2,12 @@ package mixter.domain.subscription
 
 import mixter.domain.EventPublisher
 import mixter.domain.identity.UserId
-import mixter.domain.subscription.event.UserFollowed
+import mixter.domain.subscription.event.{UserFollowed, UserUnfollowed}
 
-class Subscription {
+case class Subscription(userFollowed: UserFollowed) {
+  def unfollow()(implicit ep:EventPublisher): Unit = {
+    ep.publish(UserUnfollowed(userFollowed.subscriptionId))
+  }
 }
 
 object Subscription {

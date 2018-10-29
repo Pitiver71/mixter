@@ -20,7 +20,7 @@ class SubscriptionSpec extends WordSpec with Matchers with SpyEventPublisherFixt
       //Given
       val subscription = Subscription(UserFollowed(SUBSCRIPTION_ID))
       //When
-      subscription.unfollow()
+      subscription unfollow()
       //Then
       val expected = UserUnfollowed(SUBSCRIPTION_ID)
       eventPublisher.publishedEvents should contain only expected
