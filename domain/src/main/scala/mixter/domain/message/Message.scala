@@ -2,7 +2,7 @@ package mixter.domain.message
 
 import mixter.domain.identity.UserId
 import mixter.domain.message.Message.DecisionProjection
-import mixter.domain.message.event.{MessageEvent, MessageQuacked, MessageRequacked}
+import mixter.domain.message.event.{MessageDeleted, MessageEvent, MessageQuacked, MessageRequacked}
 import mixter.domain.{Aggregate, EventPublisher}
 
 case class Message(messageQuacked: MessageQuacked, events:Traversable[MessageEvent]) extends Aggregate {
@@ -11,12 +11,18 @@ case class Message(messageQuacked: MessageQuacked, events:Traversable[MessageEve
   override type AggregateEvent = MessageEvent
   override type InitialEvent = MessageQuacked
 
-  private val projection = events.foldLeft(DecisionProjection.of(messageQuacked))((acc,event)=> acc(event))
+  val projection = events.foldLeft(DecisionProjection.of(messageQuacked))((acc,event)=> acc(event))
 
   def requack(requacker: UserId, authorId:UserId, message:String)(implicit ep:EventPublisher): Unit =
     if(!projection.publishers.contains(requacker)){
       ep.publish(MessageRequacked(projection.messageId,requacker, authorId, message))
     }
+
+  def delete(userId: UserId)(implicit ep:EventPublisher): Unit = {
+    if (userId.equals(messageQuacked.author) && !projection.deleted) {
+      ep.publish(MessageDeleted(messageQuacked.id))
+    }
+  }
 }
 
 object Message {
@@ -25,13 +31,14 @@ object Message {
   : Unit = {
     ep.publish(MessageQuacked(idGen(),message, author))
   }
-  case class DecisionProjection(messageId:MessageId, publishers:Set[UserId]){
+  case class DecisionProjection(messageId:MessageId, publishers:Set[UserId], deleted: Boolean = false){
     def apply(messageEvent:MessageEvent):DecisionProjection = messageEvent match {
       case MessageRequacked(_,requacker, _, _)=> copy(publishers=publishers+requacker)
       case MessageQuacked(_,_,_) => this// invalid, a message can only be requacked once
+      case MessageDeleted(_) => copy(deleted=true)
     }
   }
-  object DecisionProjection{
+  object DecisionProjection {
     def of(messageQuacked: MessageQuacked) = DecisionProjection(messageQuacked.id, Set(messageQuacked.author))
   }
 }
