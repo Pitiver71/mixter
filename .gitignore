@@ -2,3 +2,5 @@ target
 project/.boot
 project/.sbtboot
 project/.ivy
+.idea
+*.iml
