@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e5cdf2a-a6ec-4e30-87e7-7315cbf824ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_12_1_0_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_12_1_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_12_3_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_12_3_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/domain-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/domain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/infra-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/infra.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/mixter-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/mixter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/scala/mixter/domain/message/Message.scala" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/scala/mixter/domain/message/Message.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/scala/mixter/domain/message/event/MessageEvent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/scala/mixter/domain/message/event/MessageEvent.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/scala/mixter/domain/message/MessageSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/scala/mixter/domain/message/MessageSpec.scala" afterDir="false" />
-    </list>
+    <list default="true" id="9e5cdf2a-a6ec-4e30-87e7-7315cbf824ca" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -48,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Message.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Message.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domain/src/main/scala/mixter/domain/message/Message.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            <state relative-caret-position="272">
+              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding>
                 <element signature="e#31#67#0" expanded="true" />
               </folding>
@@ -78,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageSpec.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MessageSpec.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/domain/src/test/scala/mixter/domain/message/MessageSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+            <state relative-caret-position="179">
+              <caret line="52" column="48" lean-forward="true" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
               <folding>
                 <element signature="e#32#77#0" expanded="true" />
               </folding>
@@ -224,6 +201,16 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mixter_2523" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mixter" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="identity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mixter_2523" type="b2602c69:ProjectViewProjectNode" />
@@ -460,14 +447,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540818122677</updated>
-      <workItem from="1540818126402" duration="5454000" />
+      <workItem from="1540818126402" duration="5752000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MessageSpec - 2018.10.29 at 14h 48m 54s.xml">
-      <configuration name="MessageSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="MessageIdSpec - 2018.10.29 at 14h 49m 18s.xml">
       <configuration name="MessageIdSpec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -495,13 +479,15 @@
     <history-entry file="MessageSpec - 2018.10.29 at 15h 33m 09s.xml">
       <configuration name="MessageSpec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
+    <history-entry file="MessageSpec - 2018.10.29 at 15h 40m 52s.xml">
+      <configuration name="MessageSpec" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5454000" />
+    <option name="totallyTimeSpent" value="5752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="sbt" />
@@ -522,9 +508,9 @@
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" />
       <window_info anchor="right" id="Gradle" />
       <window_info anchor="right" id="Theme Preview" />
@@ -621,22 +607,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/test/scala/mixter/domain/message/MessageSpec.scala">
+    <entry file="file://$PROJECT_DIR$/domain/src/main/scala/mixter/domain/message/Message.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        <state relative-caret-position="272">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding>
-            <element signature="e#32#77#0" expanded="true" />
+            <element signature="e#31#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/scala/mixter/domain/message/Message.scala">
+    <entry file="file://$PROJECT_DIR$/domain/src/test/scala/mixter/domain/message/MessageSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        <state relative-caret-position="179">
+          <caret line="52" column="48" lean-forward="true" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
           <folding>
-            <element signature="e#31#67#0" expanded="true" />
+            <element signature="e#32#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
